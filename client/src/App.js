@@ -26,9 +26,9 @@ function App() {
         </section>  
       }
 
-      {names.forEach((name)=>{
-        <h3 key={name.nombre}> {name.nombre} </h3>
-      })}
+      {names.map( (name, i) => (
+        <h3 key={i}> {name.nombre} </h3>
+      ))}
 
     </section>
     
